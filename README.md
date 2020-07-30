@@ -119,3 +119,6 @@ Quill.register('modules/yourQuillModule', yourQuillModule)
 
 ### Quill
 [Quill API document](https://quilljs.com/docs/quickstart/)
+
+## Differences to surmon-china/vue-quill-editor
+The Component Code is moved into a mixin, that can be used to create custom quill components without having to write all the basic wrapper code.
