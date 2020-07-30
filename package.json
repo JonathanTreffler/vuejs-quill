@@ -1,6 +1,6 @@
 {
   "name": "vuejs-quill",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Quill wrapper for vue.js",
   "main": "src/index.js",
   "scripts": {
