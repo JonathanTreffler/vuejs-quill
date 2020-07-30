@@ -2,9 +2,11 @@
   "name": "vuejs-quill",
   "version": "1.0.0",
   "description": "A Quill wrapper for vue.js",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js",
+    "lint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/TessyPowder/vuejs-quill/issues"
   },
-  "homepage": "https://github.com/TessyPowder/vuejs-quill#readme"
+  "homepage": "https://github.com/TessyPowder/vuejs-quill#readme",
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-plugin-vue": "^6.2.2"
+  }
 }
