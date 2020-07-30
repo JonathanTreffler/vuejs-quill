@@ -10,6 +10,7 @@
 </template>
 
 <script>
+import Quill from 'quill';
 import vuejsQuillMixin from "./mixin.js";
 
 export default {
