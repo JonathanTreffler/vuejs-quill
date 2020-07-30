@@ -57,6 +57,13 @@ import { mixin } from "vuejs-quill";
 
 export default {
 	mixins: [mixin],
+	data: function() {
+		return {
+			mixinOptions: {
+				theme: "snow",
+			}
+		};
+	},
 };
 </script>
 ```
