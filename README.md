@@ -1,3 +1,5 @@
+![Lint](https://github.com/TessyPowder/vuejs-quill/workflows/Lint/badge.svg)
+
 # Vuejs Quill
 
 based on: [vue-quill-editor](https://github.com/surmon-china/vue-quill-editor/)
