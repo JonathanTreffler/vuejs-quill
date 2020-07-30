@@ -1,3 +1,5 @@
+![Lint](https://github.com/TessyPowder/vuejs-quill/workflows/Lint/badge.svg)
+
 # Vuejs Quill
 
 based on: [vue-quill-editor](https://github.com/surmon-china/vue-quill-editor/)
@@ -6,19 +8,14 @@ based on: [vue-quill-editor](https://github.com/surmon-china/vue-quill-editor/)
 
 ### Install
 
-**NPM**
-
 ``` bash
 npm install vuejs-quill --save
+```
 
-
-### Mount
-
-**Mount with global**
-
+### Mount with component
 ``` javascript
 import Vue from 'vue'
-import VueQuillEditor from 'vue-quill-editor'
+import VueQuillEditor from 'vuejs-quill'
 
 import 'quill/dist/quill.core.css' // import styles
 import 'quill/dist/quill.snow.css' // for snow theme
@@ -27,20 +24,41 @@ import 'quill/dist/quill.bubble.css' // for bubble theme
 Vue.use(VueQuillEditor, /* { default global options } */)
 ```
 
-**Mount with local component**
-
+ ### Mount with local component
 ```javascript
 import 'quill/dist/quill.core.css'
 import 'quill/dist/quill.snow.css'
 import 'quill/dist/quill.bubble.css'
 
-import { quillEditor } from 'vue-quill-editor'
+import { quillEditor } from 'vuejs-quill'
 
 export default {
   components: {
     quillEditor
   }
 }
+```
+
+### Mount with mixin
+```vue
+<template>
+  <div
+    v-on:click="$emit('activate')"
+    class="quill-editor"
+    :class="{'toolbarDisabled': toolbarDisabled == true, }"
+  >
+    <slot name="toolbar"></slot>
+    <div ref="editor"></div>
+  </div>
+</template>
+
+<script>
+import { mixin } from "vuejs-quill";
+
+export default {
+	mixins: [mixin],
+};
+</script>
 ```
 
 ### Register Quill module
@@ -119,3 +137,6 @@ Quill.register('modules/yourQuillModule', yourQuillModule)
 
 ### Quill
 [Quill API document](https://quilljs.com/docs/quickstart/)
+
+## Differences to surmon-china/vue-quill-editor
+The Component Code is moved into a mixin, that can be used to create custom quill components without having to write all the basic wrapper code.
