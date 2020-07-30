@@ -108,11 +108,11 @@ export default {
 			if (this.$el) {
 
 				// Options
-        if(this.mixinOptions) {
-          this._options = this.mixinOptions;
-        } else {
-				  this._options = Object.assign({}, this.defaultOptions, this.globalOptions, this.options);
-        }
+				if(this.mixinOptions) {
+					this._options = this.mixinOptions;
+				} else {
+					this._options = Object.assign({}, this.defaultOptions, this.globalOptions, this.options);
+				}
 
 				// Instance
 				this.quill = new Quill(this.$refs.editor, this._options);
