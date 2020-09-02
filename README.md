@@ -1,5 +1,4 @@
 [![npm](https://img.shields.io/npm/v/vuejs-quill?style=flat-square)](https://www.npmjs.com/package/vuejs-quill)
-[![npm bundle size](https://img.shields.io/bundlephobia/min/vuejs-quill?style=flat-square)](https://www.npmjs.com/package/vuejs-quill)
 [![npm](https://img.shields.io/npm/dt/vuejs-quill?style=flat-square)](https://www.npmjs.com/package/vuejs-quill)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TessyPowder/vuejs-quill/Lint?label=Lint&style=flat-square)
 ![GitHub](https://img.shields.io/github/license/TessyPowder/vuejs-quill?style=flat-square)
