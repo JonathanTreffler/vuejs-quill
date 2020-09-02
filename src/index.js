@@ -9,7 +9,7 @@ const install = (Vue, globalOptions) => {
 	Vue.component(quillEditor.name, quillEditor);
 };
 
-const VueQuillEditor = { Quill, quillEditor, install };
+const VueQuillEditor = { Quill, quillEditor, install, };
 export default VueQuillEditor;
 
 import mixin from "./mixin.js";

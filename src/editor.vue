@@ -1,19 +1,19 @@
 <template>
-  <div
-    v-on:click="$emit('activate')"
-    class="quill-editor"
-    :class="{'toolbarDisabled': toolbarDisabled == true, }"
-  >
-    <slot name="toolbar"></slot>
-    <div ref="editor"></div>
-  </div>
+	<div
+		v-on:click="$emit('activate')"
+		class="quill-editor"
+		:class="{'toolbarDisabled': toolbarDisabled == true, }"
+	>
+		<slot name="toolbar"></slot>
+		<div ref="editor"></div>
+	</div>
 </template>
 
 <script>
 import vuejsQuillMixin from "./mixin.js";
 
 export default {
-	mixins: [vuejsQuillMixin],
+	mixins: [ vuejsQuillMixin, ],
 };
 </script>
 <style>

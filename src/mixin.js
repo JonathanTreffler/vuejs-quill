@@ -7,21 +7,21 @@ const defaultOptions = {
 	boundary: document.body,
 	modules: {
 		toolbar: [
-			["bold", "italic", "underline", "strike"],
-			["blockquote", "code-block"],
-			[{ "header": 1 }, { "header": 2 }],
-			[{ "list": "ordered" }, { "list": "bullet" }],
-			[{ "script": "sub" }, { "script": "super" }],
-			[{ "indent": "-1" }, { "indent": "+1" }],
-			[{ "direction": "rtl" }],
-			[{ "size": ["small", false, "large", "huge"] }],
-			[{ "header": [1, 2, 3, 4, 5, 6, false] }],
-			[{ "color": [] }, { "background": [] }],
-			[{ "font": [] }],
-			[{ "align": [] }],
-			["clean"],
-			["link", "image", "video"],
-		]
+			[ "bold", "italic", "underline", "strike", ],
+			[ "blockquote", "code-block", ],
+			[ { "header": 1, }, { "header": 2, }, ],
+			[ { "list": "ordered", }, { "list": "bullet", }, ],
+			[ { "script": "sub", }, { "script": "super", }, ],
+			[ { "indent": "-1", }, { "indent": "+1", }, ],
+			[ { "direction": "rtl", }, ],
+			[ { "size": [ "small", false, "large", "huge", ], }, ],
+			[ { "header": [ 1, 2, 3, 4, 5, 6, false, ], }, ],
+			[ { "color": [], }, { "background": [], }, ],
+			[ { "font": [], }, ],
+			[ { "align": [], }, ],
+			[ "clean", ],
+			[ "link", "image", "video", ],
+		],
 	},
 	placeholder: "Insert text here ...",
 	readOnly: false,
@@ -48,7 +48,7 @@ if (typeof Object.assign != "function") {
 			return to;
 		},
 		writable: true,
-		configurable: true
+		configurable: true,
 	});
 }
 
@@ -68,17 +68,17 @@ export default {
 		value: Object,
 		disabled: {
 			type: Boolean,
-			default: false
+			default: false,
 		},
 		options: {
 			type: Object,
 			required: false,
-			default: () => ({})
+			default: () => ({}),
 		},
 		globalOptions: {
 			type: Object,
 			required: false,
-			default: () => ({})
+			default: () => ({}),
 		},
 		focused: {
 			type: Boolean,
@@ -151,7 +151,7 @@ export default {
 
 					this._content = contents;
 					this.$emit("input", this._content);
-					this.$emit("change", { contents, quill });
+					this.$emit("change", { contents, quill, });
 				});
 
 				// Emit ready event
@@ -201,6 +201,6 @@ export default {
 			} else {
 				this.quill.blur();
 			}
-		}
-	}
+		},
+	},
 };
