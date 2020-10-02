@@ -1,6 +1,7 @@
 [![npm](https://img.shields.io/npm/v/vuejs-quill?style=flat-square)](https://www.npmjs.com/package/vuejs-quill)
 [![npm](https://img.shields.io/npm/dt/vuejs-quill?style=flat-square)](https://www.npmjs.com/package/vuejs-quill)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/JonathanTreffler/vuejs-quill/Lint?label=Lint&style=flat-square)
+![GitHub Lint Workflow Status](https://img.shields.io/github/workflow/status/JonathanTreffler/vuejs-quill/Lint?label=Lint&style=flat-square)
+![GitHub CodeQL Workflow Status](https://img.shields.io/github/workflow/status/JonathanTreffler/vuejs-quill/CodeQL?label=CodeQL&style=flat-square)
 ![GitHub](https://img.shields.io/github/license/JonathanTreffler/vuejs-quill?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/JonathanTreffler/vuejs-quill?style=flat-square)
 [![Maintenance](https://img.shields.io/maintenance/yes/2020?style=flat-square)](https://github.com/JonathanTreffler/vuejs-quill/commits/)
