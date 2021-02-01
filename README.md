@@ -4,7 +4,7 @@
 ![GitHub CodeQL Workflow Status](https://img.shields.io/github/workflow/status/JonathanTreffler/vuejs-quill/CodeQL?label=CodeQL&style=flat-square)
 ![GitHub](https://img.shields.io/github/license/JonathanTreffler/vuejs-quill?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/JonathanTreffler/vuejs-quill?style=flat-square)
-[![Maintenance](https://img.shields.io/maintenance/yes/2020?style=flat-square)](https://github.com/JonathanTreffler/vuejs-quill/commits/)
+[![Maintenance](https://img.shields.io/maintenance/yes/2021?style=flat-square)](https://github.com/JonathanTreffler/vuejs-quill/commits/)
 
 # Vuejs Quill
 
